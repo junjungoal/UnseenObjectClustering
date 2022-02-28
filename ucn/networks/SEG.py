@@ -7,11 +7,11 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torchvision
 import copy
-from fcn.config import cfg
-from networks.utils import log_softmax_high_dimension, softmax_high_dimension
-from networks.embedding import EmbeddingLoss
-from . import unets
-from . import resnet_dilated
+from ucn.fcn.config import cfg
+from ucn.networks.utils import log_softmax_high_dimension, softmax_high_dimension
+from ucn.networks.embedding import EmbeddingLoss
+from ucn.networks import unets
+from ucn.networks import resnet_dilated
 
 __all__ = [
     'seg_vgg_embedding', 'seg_unet_embedding', 'seg_resnet34_8s_embedding_early',

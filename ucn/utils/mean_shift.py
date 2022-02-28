@@ -6,7 +6,7 @@ import sys
 import torch
 import torch.nn.functional as F
 import numpy as np
-from fcn.config import cfg
+from ucn.fcn.config import cfg
 
 def ball_kernel(Z, X, kappa, metric='cosine'):
     """ Computes pairwise ball kernel (without normalizing constant)
